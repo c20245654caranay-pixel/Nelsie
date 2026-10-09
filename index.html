@@ -1,160 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
+    <title>Coffee</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 
     <style type="text/tailwindcss">
         @custom-variant dark (&:where(.dark, .dark *));
   </style>
-
 </head>
 
-<body class="min-h-screen bg-white text-slate-900 dark:bg-slate-900 dark:text-white">
-
-</body>
-<h1 class="text-2xl font-bold text-violet-700 dark:text-violet-300">
-    Nelsie Caranay
-</h1>
-
-<div class="flex items-center justify-center p-4">
-
-</div>
-
-<ul class="flex gap-[25px]">
-    <li>
-        <a href="#projects" class="hover:text-gray-600 dark:hover:text-gray-300">
-            Projects
-        </a>
-    </li>
-
-    <li>
-        <a href="#services" class="hover:text-gray-600 dark:hover:text-gray-300">
-            Services
-        </a>
-    </li>
-
-    <li>
-        <a href="#contact" class="hover:text-gray-600 dark:hover:text-gray-300">
-            Contact
-        </a>
-    </li>
-</ul>
-
-</nav>
-</header>
-
-<section class="text-center py-[50px] px-[20px]">
-
-    <p class="text-darkviolet-600 dark:text-darkviolet-300">
-        @_nlscrny
-    </p>
-
-    <h2 class="text-3xl font-bold text-darkviolet-800 dark:text-darkviolet-200 mt-[10px]">
-        Hello World!
+ <!-- INSERT HERE: Sari-Sari Store Feature Card -->
+    <section
+    class="md:col-span-2 bg-gray-50 dark:bg-violet-950/40 border border-violet-200 dark:border-violet-800 rounded-xl p-6">
+    <h2 class="text-xl font-bold text-violet-700 dark:text-violet-300 mb-4">
+     Store Inventory Demo
     </h2>
 
-    <p class="text-gray-600 dark:text-gray-300 mt-[10px]">
-        Welcome to my personal portfolio.
+ <!-- Store Item Card Component -->
+     <div
+    class="max-w-xs rounded-2xl bg-white dark:bg-gray-900 border border-pink-200 dark:border-slate-800 p-4 shadow-lg flex flex-col justify-between">
+    <div>
+ <div class="flex justify-between items-start mb-2">
+<span
+    class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 px-2.5 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">
+    In Stock
+    </span>
+    <span class="text-xs text-violet-500 font-mono">Stock: 48 pcs</span>
+   </div>
+
+    <h3 class="text-lg font-bold text-pink-900 dark:text-pink-mt-1">
+        3-in-1 Coffee Sachet
+    </h3>
+    <p class="text-xs text-violet-500 dark:text-violet-400 mt-1">
+     Original Flavor (28g)
     </p>
-
-    <button id="toggledark"
-        class="bg-pink-600 text-white px-[20px] py-[10px] rounded-[8px] mt-[20px] hover:bg-purple-700">
-        Toggle Button
-    </button>
-
-</section>
-
-<main class="max-w-[950px] mx-auto px-[25px] pb-[50px]">
-
-    <div class="grid grid-cols-2 gap-[25px] max-[700px]:grid-cols-1">
-
-        <section id="projects"
-            class="bg-gray-100 dark:bg-violet-900 border border-violet-200 dark:border-violet-700 rounded-[10px] p-[25px]">
-
-            <h2 class="text-xl font-bold text-purple-700 dark:text-purple-300 mb-[15px]">
-                My Projects
-            </h2>
-
-            <ul class="space-y-[8px]">
-                <li>Personal Portfolio</li>
-                <li>Payroll System</li>
-                <li>Startup Website</li>
-            </ul>
-
-        </section>
-
-        <section id="services"
-            class="border bg-gray-300 text-gray-800 dark:border-violet-700 dark:bg-violet-900 dark:text-white rounded-[10px] p-[25px]">
-            <button id="toggledark" class=""> Toggle</button>
-
-            <h2 class="text-xl font-bold text-violet-700 dark:text-violet-300 mb-[15px]">
-                My Services
-            </h2>
-
-            <ul class="space-y-[8px]">
-                <li>Website Creation</li>
-                <li>System Creation</li>
-            </ul>
-
-        </section>
-
-    </div>
-
-    <section id="contact"
-        class="bg-purple-100 dark:bg-slate-900 border border-purple-200 dark:border-purple-700 rounded-[10px] p-[25px] mt-[25px]">
-
-        <h2 class="text-xl font-bold text-purple-700 dark:text-purple-300 mb-[15px]">
-            Let's Build Together
-        </h2>
-
-        <form action="#" class="flex flex-col gap-[10px]">
-
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name"
-                class="bg-white dark:bg-violet-800 border border-pink-200 dark:border-violet-600 rounded-[6px] p-[8px]"
-                required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email"
-                class="bg-white dark:bg-violet-800 border border-pink-200 dark:border-violet-600 rounded-[6px] p-[8px]"
-                required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5"
-                class="bg-white dark:bg-violet-800 border border-violet-200 dark:border-violet-600 rounded-[6px] p-[8px]"
-                required></textarea>
-
-            <button type="submit" class="bg-pink-600 text-white py-[10px] rounded-[8px] mt-[5px] hover:bg-purple-700">
-                Send Message
-            </button>
-
-        </form>
-
-    </section>
-
-</main>
-
-<script>
-    const toggleButton = document.querySelector('#toggledark');
-    const html = document.querySelector('html');
-
-    toggleButton.addEventListener('click', function () {
-        html.classList.toggle('dark');
-
-    });
-
-</script>
+     </div>
+    <div
+        class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+    <div>
+    <p class="text-xs text-slate-400">Retail Price</p>
+    <p class="text-xl font-black text-violet-600 dark:text-violet-400">₱10.00</p>
+                            </div>
 
 
-</footer>
+                            <button
+                                class="bg-violet-600 hover:bg-violet-700 text-white font-semibold text-xs px-3.5 py-2 rounded-xl transition-colors cursor-pointer">
+                                + Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </section>
+             </div>
+           </section>
+        </a>
+    </li>
+    <li>
+       
 
-<script src="script.js"></script>
+    
 
+<script></script>
 </body>
-
 </html>
